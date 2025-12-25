@@ -20,7 +20,7 @@ app.set("views engine", "ejs"); //BSSR backend server side rendring
 // 4 Routingcode
 
 app.get("/hello", function(req, res) {
-    res.end(`<h1">HELLO WORLD </h1>`);
+    res.end(`<h1 class="color:red">HELLO WORLD </h1>`);
 });
 app.get("/gift", function(req, res) {
     res.end(`<h1>Siz sovgalar bolimidasiz</h1>`);
