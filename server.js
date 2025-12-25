@@ -14,16 +14,25 @@ app.use(express.urlencoded({extended: true}));
 
 // 3  Views code (BSSR) => traditional way
 app.set("views", "views");
-app.set("views engine", "ejs"); //BSSR backend server side rendring
+app.set("view engine", "ejs"); //BSSR backend server side rendring
 
 
 // 4 Routingcode
 
-app.get("/hello", function(req, res) {
-    res.end(`<h1 class="color:red">HELLO WORLD </h1>`);
-});
-app.get("/gift", function(req, res) {
-    res.end(`<h1>Siz sovgalar bolimidasiz</h1>`);
+app.post("/create-item", (req ,res) => {
+    console.log(req);
+    res.json({test: "success"});
+})
+
+// app.get("/hello", function(req, res) {
+//     res.end(`<h1 class="color:red">HELLO WORLD </h1>`);
+// });
+// app.get("/gift", function(req, res) {
+//     res.end(`<h1>Siz sovgalar bolimidasiz</h1>`);
+// });
+
+app.get("/", function( req, res) {
+    res.render("harid");
 });
 
 const server = http.createServer(app);
