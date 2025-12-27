@@ -7,6 +7,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <link href-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel-"stylesheet"/>
     <link rel="stylesheet" href="/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <div class="frame">
@@ -54,19 +55,179 @@
                 </div>
                 <div class="marginer"></div>
                 <div class="left_2">
-                    
+                    <div class="left_2-1"><span class="left_2_1-inf">Age:</span> <%=user.age%></div>
+                    <div class="left_2-1"><span class="left_2_1-inf">Residence: </span><%=user.residence%></div>
+                    <div class="left_2-1"><span class="left_2_1-inf">Freeleance:</span>
+                    <span class="left_2_1-freeleance"><%=user.freeleance%></span></div>
+                    <div class="left_2-1"><span class="left_2_1-inf">Adress:</span><%=user.address%></div>
                 </div>
                 <div class="marginer"></div>
-                <div class="left_3"></div>
-                <div class="marginer"></div>
-                <div class="left_4"></div>
-                <div class="marginer"></div>
-                <div class="left_5"></div>
-                <div class="marginer"></div>
+                <div class="left_3">
+                    <div class="left_3-languages">
+                        <h4 class="">Languages</h4>
+                        <div class="languages">
+                            <span class="lang-type"><%= user.languages[0]%></span><span class="lang-per">100%</span>
+                        </div>
+                        <div class="y-line"></div>    
 
+                        <div class="languages">
+                            <span class="lang-type"><%= user.languages[1]%></span><span class="lang-per">50%</span>
+                        </div>
+                        <div class="y-line" style="width: 50%;"></div>  
+
+                        <div class="languages">
+                            <span class="lang-type"><%= user.languages[2]%></span><span class="lang-per">75%</span>
+                        </div>
+                        <div class="y-line" style="width: 75%;"></div> 
+                        
+                        <div class="languages">
+                            <span class="lang-type"><%= user.languages[3]%></span><span class="lang-per">80%</span>
+                        </div>
+                        <div class="y-line" style="width: 80%;"></div>  
+                    </div>
+                    
+                </div>
+                <div class="marginer marginer-l"></div>
+
+                                            <!-- /*Skills section*/ -->
+                <div class="left_4">
+                    <div class=" left_4-skills">
+                        <h4 class="skills-title">Skills</h4>
+                        <div class="skills">
+                            <span class="skill-type"><%= user.skills[0]%></span><span class="lang-per">100%</span>
+                        </div>
+                        <div class="y-line"></div>    
+
+                        <div class="skills">
+                            <span class="skill-type"><%= user.skills[1]%></span><span class="lang-per">50%</span>
+                        </div>
+                        <div class="y-line" style="width: 50%;"></div>  
+
+                        <div class="skills">
+                            <span class="skill-type"><%= user.skills[2]%></span><span class="lang-per">75%</span>
+                        </div>
+                        <div class="y-line" style="width: 75%;"></div> 
+                        
+                        <div class="skills">
+                            <span class="skill-type"><%= user.skills[3]%></span><span class="lang-per">80%</span>
+                        </div>
+                        <div class="y-line" style="width: 80%;"></div> 
+                        
+                        <div class="skills">
+                            <span class="skill"><%= user.skills[4]%></span><span class="lang-per">80%</span>
+                        </div>
+                        <div class="y-line" style="width: 80%;"></div>
+                        
+                        <div class="skills">
+                            <span class="skill-type"><%= user.skills[5]%></span><span class="lang-per">80%</span>
+                        </div>
+                        <div class="y-line" style="width: 80%;"></div>  
+                    </div>
+                    
+                </div>
+                <div class="marginer marginer-s"></div>
+                <div class="left_5">
+                    <div class="left_5-extra-s">
+                        <div class="extra-skills">
+                            <img  clas="extra-s-icon" src="icon/Icons.svg" alt="">
+                            <span class="extra-skill-type"><%= user.extra_skills[0]%></span>
+                        </div>
+
+                            <div class="extra-skills">
+                            <img  clas="extra-s-icon" src="icon/Icons.svg" alt="">
+                            <span class="extra-skill-type"><%= user.extra_skills[1]%></span>
+                        </div>
+
+                            <div class="extra-skills">
+                            <img  clas="extra-s-icon" src="icon/Icons.svg" alt="">
+                            <span class="extra-skill-type"><%= user.extra_skills[2]%></span>
+                        </div>
+
+                            <div class="extra-skills">
+                            <img  clas="extra-s-icon" src="icon/Icons.svg" alt="">
+                            <span class="extra-skill-type"><%= user.extra_skills[3]%></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="marginer marginer-s"></div>
             </div>
-            <div class="midd_frame"></div>
-            <div class="right_frame"></div>
+            <div class="midd_frame">
+                <div class="midd_frame-sec">
+                        <div class="midd_frame-info">
+                        <h1 class="middle_frame-info-title">Software Engineer in Apple</h1>
+                        <div class="middle_frame-info-p">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem atque rem eum et ducimus quae?</p>
+                        </div>
+                        <button class="middle_frame-info-btn"><strong>HIRE ME -></strong></button>
+                </div>
+                <div class="midd_frame-img">
+                    <img src="images/image.png" alt="">
+                </div>
+                </div>
+                                <!-- Service section -->
+                <div class="midd_frame-services">
+                    <div class="service-info">
+                        <h1 class="service-title">My Services</h1>
+                        <div class="service-p">
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia et placeat impedit repudiandae quos voluptates, nisi suscipit delectus rerum mollitia.</p>
+                        </div>
+                    </div>
+                    <div class="service-types">
+                        <div class="service-type">
+                            <img src="icon/Icons_coding.svg" class="service-img">
+                            <h3 class="service-type_title">Web Development</h3>
+                            <p class="service-type-p">Blog, E-Commerce</p>
+                        </div>
+
+                                                <div class="service-type">
+                            <img src="icon/Icons_illustration.svg" class="service-img">
+                            <h3 class="service-type_title">Web Development</h3>
+                            <p class="service-type-p">Blog, E-Commerce</p>
+                        </div>
+
+                                                <div class="service-type">
+                            <img src="icon/Icons_Microphone.svg" class="service-img">
+                            <h3 class="service-type_title">Web Development</h3>
+                            <p class="service-type-p">Blog, E-Commerce</p>
+                        </div>
+
+                                                <div class="service-type">
+                            <img src="icon/Icons_game-development.svg" class="service-img">
+                            <h3 class="service-type_title">Web Development</h3>
+                            <p class="service-type-p">Blog, E-Commerce</p>
+                        </div>
+
+                                                <div class="service-type">
+                            <img src="icon/Icons_Photographer.svg" class="service-img">
+                            <h3 class="service-type_title">Web Development</h3>
+                            <p class="service-type-p">Blog, E-Commerce</p>
+                        </div>
+
+                                                <div class="service-type">
+                            
+                            <h3 class="service-type_title">Web Development</h3>
+                            <p class="service-type-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti sint in odit eos iure?</p>
+                            <button class="service-type-btn">ORDER NOW ></button>
+                        </div>
+                    </div>
+                </div>                    
+                
+            </div>
+            <div class="right-frame">
+                <div class="r_f-icons">
+                    <div class="contrast-icon">
+                        <img src="btn_icon/Icons_Contrast.svg" alt="">
+                    </div>
+                    <div class="menu-icons">
+                        <span></span> <img  src="btn_icon/Icons_Home.svg" alt="">
+                        <img src="btn_icon/file-code (1).svg" alt="">
+                        <img src="btn_icon/Icons_cv (1).svg" alt="">
+                        <img src="btn_icon/Icons_Portfolio.svg" alt="">
+                        <img src="btn_icon/Icons_Blog (1).svg" alt="">
+                        <img src="btn_icon/Icons_Contact.svg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
