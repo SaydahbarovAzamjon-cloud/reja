@@ -2,18 +2,19 @@
 .frame {
     position: relative;
     width: 100%;
-    height: 100%;
+    min-height: 180vh;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     background: #e5e5e5;
+
 }
 
 .frame .main_frame {
     position: relative;
     width: 1440px;
-    min-height: 100vh;
+    height: 100%;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -28,17 +29,6 @@
     flex-direction: column;
     background-color: white;
 }
-
-.main_frame .midd_frame {
-    position: relative;
-    width: 970px;
-    height: 1259px;
-    margin-left: 30px;
-    margin-right: 27px;
-    display: flex;
-    flex-direction: column;
-}
-
 
 .main_frame .left_1 {
     position: relative;
@@ -134,6 +124,7 @@
 .link-href {
     text-decoration: none;
     color: black;
+
 }
 
 .icon {
@@ -148,9 +139,9 @@
 
 .icon-1 {
     position: relative;
-    left: 29.17%;
-    right: 27.08%;
-    margin-top: 5.86px;
+    left: 27%;
+    right: 27.5%;
+    margin-bottom: 5.86px;
 }
 
 .main_frame .left_frame .left_4 {
@@ -294,7 +285,7 @@
 }
 .marginer-s {
         position: relative;
-        top: 140px;
+        top: 50px;
 }
                         /* end of skill section */
 /* Extra skill section */
@@ -303,7 +294,6 @@
     width: 220px;
     height: 153px;
     margin-left: 45px;
-    top: 120px;
     }
 
 .extra-s-icon > img {
@@ -314,26 +304,32 @@
     }
 
     .extra-skill-type {
-        margin-left: 12px;
-        font-family: Inter;
-font-style: Regular;
-font-size: 15px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0%;
-text-align: left;
-text-transform: capitalize;
+    margin-left: 19px;
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+        letter-spacing:normal;
+    color: #767676;
     }
 
 /* end of extra skill sektion */
 
 /*Middle frame secton*/
-.midd-frame {
-    width: 971px;
-}                    
+.main_frame .midd_frame {
+    position: relative;
+    width: 970px;
+    height: 1259px;
+    margin-left: 30px;
+    margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+}                
 .midd_frame-sec {
     position: relative;
-    bottom:0px;
+    bottom: 67px;
     width: 1000px;
     height: 454.33px;
     background-color: white;
@@ -374,7 +370,7 @@ text-transform: capitalize;
 }
 
 .middle_frame-info-btn {
-    /* Button/Book Me */
+
 width: 154px;
 height: 51px;
 padding: 16px 32px 16px 32px;
@@ -386,7 +382,7 @@ font-weight: 350;
 
 /*Service section*/
 .midd_frame-services {
-    margin-top: 200px;
+    margin-top: 140px;
 }
 
 .service-types {
@@ -431,6 +427,8 @@ font-weight: 350;
     height: 225px;
     text-align: center;
     background-color: white;
+    border: 2px solid #ffb400;
+
 }
 
 .service-img {
@@ -479,56 +477,57 @@ font-weight: 350;
 /* end of middle section*/
 
     /* Right section*/
-.right-frame {
+.main_frame .right_frame {
     position: relative;
-    margin-left: 22px;
+    left: 20px;
+    bottom: 10px;
     width: 108px;
-    height: 100%;
+    height: 1390px;
     background-color: white;
-    display: flex;
-    justify-content: center;
-}
-
-.r_f-icons {
-    position: relative;
+    align-items: center; 
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.contrast-icon > img {
+.icon_contrast {
+    width: 30px;
+    height: 30px;
     margin-top: 50px;
-    /* text-align: center; */
+    margin-left: 39px;
+    margin-right: 39px;
+    margin-bottom: 174px;
+}
+
+.pop_up {
+    width: 65px;
+    height: 33px;
+    margin-left: 21px;
+    margin-right: 22px;
+    margin-bottom: 5px;
+}
+
+.icon_contrast2 {
+    border-radius: 50%;
     width: 40px;
     height: 40px;
-    cursor: pointer;
+    background-color: rgba(245, 245, 245, 0.6);
+    margin-bottom: 43px;
+    margin-right: 34px;
+    margin-left: 34px;
 }
 
-
-.menu-icons {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
-    margin-top: 220px;
-}
-
-
-.menu-icons > img  {
+.icon_home {
+    border-radius: 50%;
     width: 40px;
     height: 40px;
-    margin-top: 20px;
+    background-color:#f6b800; 
+    
+    margin-bottom: 43px;
+    margin-right: 34px;
+    margin-left: 34px;
 }
 
-.menu-icons img {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
 
-.menu-icons img:hover,
-.contrast-icon img:hover {
-    transform: scale(1.1);
-    transition: 0.2s ease;
+.img {
+    margin: 11px;
 }
-
