@@ -7,6 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "train": "nodemon train.js",
+    "callf": "nodemon callbackfunction.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "A'zamjon",
@@ -16,5 +17,15 @@
     "express": "^5.2.1",
     "http": "^0.0.1-security",
     "nodemon": "^3.1.11"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaydahbarovAzamjon-cloud/reja.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/SaydahbarovAzamjon-cloud/reja/issues"
+  },
+  "homepage": "https://github.com/SaydahbarovAzamjon-cloud/reja#readme"
 }
