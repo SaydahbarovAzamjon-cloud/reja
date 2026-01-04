@@ -17,7 +17,7 @@ function task(a, b) {
 
 
 
-const check = task("mit", "tim");    
+const check = task("mit38", "38mit");    
 console.log(check)      // true
 
 
