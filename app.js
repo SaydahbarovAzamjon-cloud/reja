@@ -56,11 +56,32 @@ app.post("/delete-item", (req, res) => {
             res.json({state: "success"})
         }
     )
+})
 
+//BackEnd_dan FrontEnd_ga jonatish
+app.post("/edit-item", (req, res) => {
+    const data = req.body;
+    console.log(data);
+// BackEnd_dan DataBase_ga jonatish
+
+db.collection("plans").findOneAndUpdate(
+    {_id: new mongodb.ObjectId(data.id)},
+    {$set: {reja: data.new_input}},
+// Backend_dan FrontEnd_ga jonatish    
+    function(err, data){
+        res.json({state: "success"});
+    }
+)
 
 })
 
-
+app.post("/delete-all", (req, res) => {
+    if(req.body.delete_all) {
+        db.collection("plans").deleteMany(function () {
+            res.json({state: "hamma rejalar ochirildi!"})
+        });
+    }
+});
 
 app.get("/", function( req, res) {
     console.log('user entered /')
