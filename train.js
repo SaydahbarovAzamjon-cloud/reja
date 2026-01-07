@@ -1,4 +1,33 @@
 console.log('TRAIN  AREA!');
+// TASK E: 
+
+// Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+
+                                // YECHIM
+const task = ['MIT38'];
+const solve = task.map((ele) => {
+    return ele.split("").reverse().join("");
+});
+console.log(solve)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // TASK D : 
 
@@ -6,30 +35,19 @@ console.log('TRAIN  AREA!');
 
 // MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 
-function task(a, b) {
-    if (a.length !== b.length) return false;
+// function task(a, b) {
+//     if (a.length !== b.length) return false;
 
-    const aa = a.split('').sort().join('');
-    const bb = b.split('').sort().join('');
+//     const aa = a.split('').sort().join('');
+//     const bb = b.split('').sort().join('');
 
-    return aa === bb;
-}
-
-
-
-const check = task("mit38", "38mit");    
-console.log(check)      // true
+//     return aa === bb;
+// }
 
 
 
-
-
-
-
-
-
-
-
+// const check = task("mit38", "38mit");    
+// console.log(check)      // true
 
 // MITASK-C 
 
