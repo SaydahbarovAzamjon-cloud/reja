@@ -1,33 +1,50 @@
 console.log('TRAIN  AREA!');
+// TASK F:
+
+// Yagona string argumentga ega findDoublers nomli function tuzing
+// Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa
+// true yokida false natija qaytarsin.
+
+// MASALAN: findDoublers("hello"); natija true qaytadi. Sababi ikki marotaba takrorlangan 'll' harfi mavjud!
+                                                        
+
+function findDoubler(finder) {
+for (let i = 0; i < finder.length - 1; i++) {
+    if (finder[i] === finder[i + 1]) {
+        return true;
+    }
+}
+        return false;
+}
+
+console.log(findDoubler("hello")); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // TASK E: 
 
 // Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
 // MASALAN: getReverse("hello") return qilsin "olleh"
 
                                 // YECHIM
-const task = ['MIT38'];
-const solve = task.map((ele) => {
-    return ele.split("").reverse().join("");
-});
-console.log(solve)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const task = ['MIT38'];
+// const solve = task.map((ele) => {
+//     return ele.split("").reverse().join("");
+// });
+// console.log(solve)
 
 // TASK D : 
 
@@ -122,16 +139,6 @@ console.log(solve)
 // }
 
 // console.log(string("ad2a54y79wet0sfgb9")); // 7
-
-
-
-
-
-
-
-
-
-
 
 // TASK A
 
